@@ -1,4 +1,4 @@
-baseurl = "/"
+baseurl = "https://mystifying-pasteur-c40234.netlify.com"
 languageCode = "en-US"
 title = "MGH Blog"
 theme = "code-editor"
