@@ -1,0 +1,10 @@
+baseurl = "http://blog.manchestergreyhats.co.uk"
+languageCode = "en-US"
+title = "MGH Blog"
+theme = "code-editor"
+
+[params]
+    author = "Jay"
+    locale = "en-US"
+    # rootlink = "/"
+    # rootlink specifies where Root in menu.html links to. If it's not set then baseurl will be used.
