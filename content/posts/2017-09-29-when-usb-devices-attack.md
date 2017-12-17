@@ -1,5 +1,6 @@
 ---
-categories: ["workshop", "USB", "Tim"]
+categories: ["workshop"]
+tags ["USB", "Tim"]
 date: 2017-09-29T18:13:01Z
 title: When USB Devices Attack
 url: /2017/09/29/when-usb-devices-attack/

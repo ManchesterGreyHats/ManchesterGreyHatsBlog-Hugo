@@ -1,5 +1,6 @@
 ---
-categories: ["workshop", "MitM", "Tim"]
+categories: ["workshop"]
+tags: ["MitM", "Tim"]
 date: 2017-07-26T18:13:01Z
 title: Man in the Middle attacks
 url: /2017/07/26/man-in-the-middle-attacks/

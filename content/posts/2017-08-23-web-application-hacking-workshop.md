@@ -1,5 +1,6 @@
 ---
-categories: ["workshop", "web application", "Jay"]
+categories: ["workshop"]
+tags: ["web application", "Jay"]
 date: 2017-08-23T18:13:01Z
 title: Web Application Hacking Workshop
 url: /2017/08/23/web-application-hacking-workshop/
