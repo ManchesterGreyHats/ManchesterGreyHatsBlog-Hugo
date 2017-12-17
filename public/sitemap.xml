@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>https://mystifying-pasteur-c40234.netlify.com/posts/my-first-post/</loc>
+    <lastmod>2017-12-16T20:11:28+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://mystifying-pasteur-c40234.netlify.com/2017/10/25/osint-workshop/</loc>
+    <lastmod>2017-10-25T18:13:01+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://mystifying-pasteur-c40234.netlify.com/2017/09/29/when-usb-devices-attack/</loc>
+    <lastmod>2017-09-29T18:13:01+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://mystifying-pasteur-c40234.netlify.com/2017/08/23/web-application-hacking-workshop/</loc>
+    <lastmod>2017-08-23T18:13:01+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://mystifying-pasteur-c40234.netlify.com/2017/07/26/man-in-the-middle-attacks/</loc>
+    <lastmod>2017-07-26T18:13:01+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://mystifying-pasteur-c40234.netlify.com/2017/03/29/from-z3r0-to-n00bie/</loc>
+    <lastmod>2017-03-29T18:13:01+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://mystifying-pasteur-c40234.netlify.com/2017/01/25/software-defined-radio-workshop/</loc>
+    <lastmod>2017-01-25T18:13:01+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://mystifying-pasteur-c40234.netlify.com/categories/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://mystifying-pasteur-c40234.netlify.com/</loc>
+    <lastmod>2017-12-16T20:11:28+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://mystifying-pasteur-c40234.netlify.com/posts/</loc>
+    <lastmod>2017-12-16T20:11:28+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://mystifying-pasteur-c40234.netlify.com/tags/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://mystifying-pasteur-c40234.netlify.com/categories/workshop/</loc>
+    <lastmod>2017-09-29T18:13:01+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://mystifying-pasteur-c40234.netlify.com/categories/workshop-brett/</loc>
+    <lastmod>2017-10-25T18:13:01+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://mystifying-pasteur-c40234.netlify.com/categories/workshop-jay/</loc>
+    <lastmod>2017-01-25T18:13:01+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://mystifying-pasteur-c40234.netlify.com/categories/workshop-mitm/</loc>
+    <lastmod>2017-07-26T18:13:01+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://mystifying-pasteur-c40234.netlify.com/categories/workshop-web-application/</loc>
+    <lastmod>2017-08-23T18:13:01+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+</urlset>

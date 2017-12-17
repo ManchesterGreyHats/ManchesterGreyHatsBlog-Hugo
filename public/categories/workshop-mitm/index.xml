@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Workshop Mitm on MGH Blog</title>
+    <link>https://mystifying-pasteur-c40234.netlify.com/categories/workshop-mitm/</link>
+    <description>Recent content in Workshop Mitm on MGH Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <lastBuildDate>Wed, 26 Jul 2017 18:13:01 +0000</lastBuildDate>
+    
+	<atom:link href="https://mystifying-pasteur-c40234.netlify.com/categories/workshop-mitm/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Man in the Middle attacks</title>
+      <link>https://mystifying-pasteur-c40234.netlify.com/2017/07/26/man-in-the-middle-attacks/</link>
+      <pubDate>Wed, 26 Jul 2017 18:13:01 +0000</pubDate>
+      
+      <guid>https://mystifying-pasteur-c40234.netlify.com/2017/07/26/man-in-the-middle-attacks/</guid>
+      <description>Presented by: Tim
+An introductory look at the the various tools and techniques for performing man in the middle attacks, as well as the techniques and tips to defend against them.
+The presentation will include a few demos of the tools and a show and tell of devices which can be used to make the attacks easier.
+For those new to MitM attacks, this is a very powerful technique used to intercept and modify network traffic (which is why encryption is so important!</description>
+    </item>
+    
+  </channel>
+</rss>
