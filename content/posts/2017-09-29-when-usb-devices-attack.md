@@ -24,6 +24,6 @@ We have a limited number of Digispark boards - hopefully enough for everyone. If
 [Amazon DigiSpark](https://www.amazon.co.uk/Digispark-Kickstarter-ATTINY85-Development-Arduino/dp/B01FRZVWYA/ref=sr_1_1?ie=UTF8&qid=1504185874&sr=8-1&keywords=digispark)
 [Workshop Slides](/files/when_usb_devices_attack/whenUSBDevicesAttack-Slides-MGH.pdf)
 [Workbook](/files/when_usb_devices_attack/whenUSBDevicesAttack-Workbook-MGH.pdf)
-[Exercise Answers](https://github.com/DigitalInterruption/ManchesterGreyHats/tree/master/files/when_usb_devices_attack/USB-examples)
+[Exercise Answers](https://github.com/ManchesterGreyHats/ManchesterGreyHatsBlog-Hugo/tree/master/public/files/when_usb_devices_attack/USB-examples)
 [Workshop Recording](https://www.youtube.com/watch?v=URYq8DHUw2A&t=1s)
 
