@@ -1,4 +1,4 @@
-baseurl = "https://blog.manchestergreyhats.co.uk"
+baseurl = "http://blog.manchestergreyhats.co.uk"
 languageCode = "en-US"
 title = "MGH Blog"
 theme = "code-editor"
