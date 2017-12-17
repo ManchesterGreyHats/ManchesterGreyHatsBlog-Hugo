@@ -1,5 +1,6 @@
 ---
-categories: ["workshop", "Jay", "SDR"]
+categories: ["workshop"]
+tags: ["Jay", "SDR"]
 date: 2017-01-25T18:13:01Z
 title: Software Defined Radio Workshop
 url: /2017/01/25/software-defined-radio-workshop/
