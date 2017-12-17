@@ -9,7 +9,7 @@ Written by [Jay](authors/jayharris)
 
 Manchester Grey Hats is about bringing the community together and because of that, we wanted to create a blogging platform for anyone wanting to use it.
 
-Blogging with MGH is not like bloging with some of the other platforms. It might seem quite complicated and roundabout to start with but it gives us a few benefits:
+Blogging with MGH is not like blogging with some of the other platforms. It might seem quite complicated and roundabout to start with but it gives us a few benefits:
 
 * Security. We are using static files so we have a smaller attack surface.
 * Text files are easy to version, update and edit.
