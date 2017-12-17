@@ -6,7 +6,7 @@ title: Software Defined Radio Workshop
 url: /2017/01/25/software-defined-radio-workshop/
 ---
 
-Presented by: Jay
+Presented by: [Jay](authors/jayharris)
 
 Software Defined Radio (SDR) is a cheap and easy way to listen to and interact with radio devices. In this workshop, we'll look at the capabilities of SDR, discuss common weaknesses in radio systems (such as wireless keyfobs and wireless keyboard) and look into ways these can be exploited with cheap and readily available hardware.
 
