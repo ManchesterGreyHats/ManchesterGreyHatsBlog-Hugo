@@ -19,5 +19,7 @@ Requirements:
 Laptop or something to write things down on (If you don't have a laptop, no worries; Just pair up with someone else!)
 
 [Workshop Slides](/files/MGH - OSINT.pdf)
+
 [Workshop Recording](https://www.youtube.com/watch?v=GBBnEXa4AIo)
 
+{{< youtube GBBnEXa4AIo >}}

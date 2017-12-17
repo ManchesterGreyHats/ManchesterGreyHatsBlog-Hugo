@@ -17,3 +17,5 @@ This workshop is aimed at beginners so if you're already familiar with web app s
 [Slides](/files/HackingWebApps-MGH.pdf)
 
 This workshop wasn't recorded, but the talk the workshop was based on can be found [here](https://www.youtube.com/watch?v=cMg5KjHzAV0)
+
+{{< youtube cMg5KjHzAV0 >}}
