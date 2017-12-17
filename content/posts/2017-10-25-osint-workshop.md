@@ -1,6 +1,6 @@
 ---
 categories: ["workshop"] 
-tags ["Brett", "OSINT"]
+tags: ["Brett", "OSINT"]
 date: 2017-10-25T18:13:01Z
 title: OSINT - Finding Secrets Online
 url: /2017/10/25/osint-workshop/
