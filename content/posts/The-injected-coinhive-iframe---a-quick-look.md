@@ -2,10 +2,8 @@
 title: "The injected coinhive iframe - a quick look"
 date: 2018-01-15T19:55:50Z
 categories: ["articles"]
-tags: ["malware","short","blog"]
+tags: ["malware","short","blog","brett"]
 ---
-# The injected coinhive iframe - a quick look
-
 
 
 Hi everyone, this is my first blog post so I thought I'd introduce myself:
