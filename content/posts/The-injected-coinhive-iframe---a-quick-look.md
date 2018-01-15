@@ -2,11 +2,8 @@
 title: "The injected coinhive iframe - a quick look"
 date: 2018-01-15T19:55:50Z
 categories: ["articles"]
-tags: ["malware","short","blog"]
+tags: ["malware","short","blog","Brett"]
 ---
-# The injected coinhive iframe - a quick look
-
-
 
 Hi everyone, this is my first blog post so I thought I'd introduce myself:
 
@@ -16,7 +13,7 @@ My name's Brett, I'm currently a security engineer for a MSP where a portion of 
 
 ## Let's start at the beginning
 
-The reason it was brought to my attention was from team over at google *insert name here* let me know that the domain was compromised - intially not much to go on. However looking at the page easily showed the issue:
+The reason it was brought to my attention was from team over at Google let me know that the domain was compromised - intially not much to go on. However looking at the page easily showed the issue:
 
 
 ```HTML
@@ -63,9 +60,9 @@ width = "1px"
 allowfullscreen > < /iframe>
 ```
 
-Finally showing us that this is infact an iframe! _*Shock, horror, gasps in the distance*_#
+Finally showing us that this is infact an iframe! _*Shock, horror, gasps in the distance*_
 
-As you can see it is not only a 1x1 pixel size, it's also hiding itself in the footer - a practice also quite typical of the practoce of [Web beacons](https://en.wikipedia.org/wiki/Web_beacon) - however I can confirm that this is malicious, just wait and see ;)
+As you can see it is not only a 1x1 pixel size, it's also hiding itself in the footer - a practice also quite typical of the practice of [Web beacons](https://en.wikipedia.org/wiki/Web_beacon) - however I can confirm that this is malicious, just wait and see ;)
 
 ## But what's down the rabbit hole?
 
@@ -891,7 +888,7 @@ As you can see this is still an encoded mess which is only readable to machines 
 I unfortunately did not have access to view the back end of the server and as such could not investigate the core compromise - but a few examples of what I have seen alongside these compromises:
 
 * Use of injected database code in order to provide persistance to the attacker
-* Use of webshells to 
+* Use of Web shells to provide trivial access to the backend of the server for many nefarious deeds 
 
 I don't believe that this to be a specific IOC of a specific attacker or even a set of attackers - it's instead just a `thing` you do to your victims... use their sites to take advantage of unsuspecting visitors.
 
