@@ -1,6 +1,6 @@
 ---
 title: "SPF / DKIM / DMARC - Where to start"
-date: 2017-12-20T10:16:23Z
+date: 2018-01-20T20:16:23Z
 draft: true
 categories: ["Articles"]
 tags: ["blog","how to", "mail servers", "DNS", "SPF", "DKIM", "DMARC"]
