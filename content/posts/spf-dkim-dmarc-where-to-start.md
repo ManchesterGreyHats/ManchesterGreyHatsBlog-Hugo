@@ -35,11 +35,11 @@ If you want to be secure quickly, follow the standard advice of SPF, DKIM then D
 
 # So, if I don't want to have any of my email blocked, what's the best way to actually deploy this?
 
-To start off, deploy DMARC. DMARC can be deployed in a reporting-only mode by setting the policy to none (p=none). Once set up, you will start to recieve email about your messages. They should, at this stage, say fail a lot. Don't worry, this is because we haven't set up any policies yet. Also, don't set up forensics reports, you want aggregate reports at this stage. This means that you won't get an email for every sent email. This may be what you want for debugging an issu, but not for a general setup.
+To start off, deploy DMARC. DMARC can be deployed in a reporting-only mode by setting the policy to none (p=none). Once set up, you will start to recieve email about your messages. They should, at this stage, say fail a lot. Don't worry, this is because we haven't set up any policies yet. Also, don't set up forensics reports, you want aggregate reports at this stage. This means that you won't get an email for every sent email. This may be what you want for debugging an issue, but not for a general setup.
 
 Next, deploy DKIM on all known mail servers. Use a selector which will help you identify the service. The mailservers which are setup with DKIM will start showing a pass in the DMARC reports. The reports which show fail should then be looked at to see if the mail is legitimate or not. If it is, you have missed a mail server. Find the server, and set up DKIM.
 
-Once DKIM is deployed, you now have a list of servers which are sending email for you. You can now use this list to create your SPF records. When creating your SPF records, avoid weak records (ie, ones which do not end with -all).
+Once DKIM is deployed, you now have a list of servers which are sending email for you. You can now use this list to create your SPF records. When creating your SPF records, avoid weak records (ie, ones which do not end with -all). Weak records also invalid senders to slip through the cracks. There are mail servers which will only look at SPF records and not DMARC, so you want these to be as locked down as possible.
 
 Lastly, when you are happy that all your email is being marked correctly with SPF and DKIM, change the DKIM policy from "None" to "reject" or "quarentine". Congratulations, you now have deployed all the DNS records and the domain should have better protection. This isn't foolproof, because not everyone is looking for these records, acting upon them. Also, things change, so keep checking the DMARC reports regularly.
 
