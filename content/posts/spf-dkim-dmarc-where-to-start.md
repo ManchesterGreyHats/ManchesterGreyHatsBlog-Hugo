@@ -38,7 +38,7 @@ To start off, deploy DMARC. DMARC can be deployed in a reporting-only mode by se
 
 Next, deploy DKIM on all known mail servers. Use a selector which will help you identify the service. The mailservers which are setup with DKIM will start showing a pass in the DMARC reports. The reports which show fail should then be looked at to see if the mail is legitimate or not. If it is, you have missed a mail server. Find the server, and set up DKIM.
 
-Once DKIM is deployed, you now have a list of servers which are sending email for you. You can now use this list to create your SPF records. When creating your SPF records, avoid weak records (ie, ones which do not end with -all). Weak records also invalid senders to slip through the cracks. There are mail servers which will only look at SPF records and not DMARC, so you want the SPF records to be as locked down as possible.
+Once DKIM is deployed, you now have a list of servers which are sending email for you. You can now use this list to create your SPF records. When creating your SPF records, avoid weak records (ie, ones which do not end with -all). Weak records may allow invalid senders to slip through the cracks. There are mail servers which will only look at SPF records and not DMARC, so you want the SPF records to be as locked down as possible.
 
 Lastly, when you are happy that all your email is being marked correctly with SPF and DKIM, change the DMARC policy from "None" to "reject" or "quarantine". Congratulations, you now have deployed all the DNS records and the domain should have better protection from malicious actors. This isn't foolproof, because not everyone is looking for these records and acting upon them. Also, things change, so keep checking the DMARC reports regularly.
 
