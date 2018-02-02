@@ -2,7 +2,7 @@
 title: "Hacking Home Routers For Fun And Practise"
 date: 2012-07-18T10:18:28Z
 categories: ["articles"]
-tags: ["hardware", "router", "UART", "hacking"]
+tags: ["hardware", "router", "UART", "hacking","Jay"]
 ---
 Written by [Jay](authors/jayharris)
 

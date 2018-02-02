@@ -1,7 +1,7 @@
 ---
 title: "Blogging With MGH"
 categories: ["Articles"]
-tags: ["mgh","blog","how to"]
+tags: ["mgh","blog","how to","Jay"]
 date: 2017-12-17T17:09:50Z
 ---
 
