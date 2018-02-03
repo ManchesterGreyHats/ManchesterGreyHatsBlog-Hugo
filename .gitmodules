@@ -1,6 +1,1 @@
-[submodule "themes/code-editor"]
-	path = themes/code-editor
-	url = https://github.com/aubm/hugo-code-editor-theme.git
-[submodule "themes/hugo-code-editor-theme"]
-	path = themes/hugo-code-editor-theme
-	url = https://github.com/ManchesterGreyHats/hugo-code-editor-theme
+
