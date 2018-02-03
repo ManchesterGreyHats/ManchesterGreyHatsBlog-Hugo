@@ -1,7 +1,7 @@
 baseurl = "https://blog.manchestergreyhats.co.uk"
 languageCode = "en-US"
 title = "MGH Blog"
-theme = "code-editor"
+theme = "hugo-code-editor-theme"
 
 [params]
     author = "Jay"
