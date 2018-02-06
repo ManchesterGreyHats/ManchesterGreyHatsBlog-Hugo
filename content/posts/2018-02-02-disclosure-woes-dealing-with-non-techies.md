@@ -42,7 +42,7 @@ Requesting Assistance
 =====================
 Despite the odd referral to the marketing team, I continued to wait for a response, for a few more days. After not hearing anything for a few more days, and the realisation that approaching the organisation as an individual may have not been a great idea, I proceeded to request [Disclosure Assistance via HackerOne](https://hackerone.com/disclosure-assistance), in the hope they may be able to provide a more trustworthy appearance. Unfortunately, on 15th January, HackerOne responded to let me know the issue was not severe enough for them to take on (they must receive **a lot** of requests for assistance, so this was completely understandable).
 
-Although the request for assistance had been declined, it did also make me feel a bit more confident in continuing to pursuit it on my own; as if they considered it to be of low risk, it may not be as severe as I was interpreting it to be, and thus my worries of repercussion for trying to help may just be a bit over the top.
+Although the request for assistance had been declined, it did also make me feel a bit more confident in continuing to pursue it on my own; as if they considered it to be of low risk, it may not be as severe as I was interpreting it to be, and thus my worries of repercussion for trying to help may just be a bit over the top.
 
 Another Attempt at Disclosure
 =============================
