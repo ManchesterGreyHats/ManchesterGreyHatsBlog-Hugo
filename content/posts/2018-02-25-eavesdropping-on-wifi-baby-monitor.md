@@ -152,6 +152,9 @@ When notified, the vendor took the \[respectably\] responsible approach and made
 
 To prevent this attack, users can simply update to the latest version of the application (v2.02.2, at the time of writing this).
 
+## CVE-ID
+[CVE-2018-7661](https://www.cvedetails.com/cve/CVE-2018-7661/)
+
 ## CVSS Score
 **CVSS Base Score**: 5.9
 
