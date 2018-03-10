@@ -1,5 +1,5 @@
 ---
-title: "My Wierd Path to Infosec"
+title: "My Weird Path to Infosec"
 date: 2018-03-09T21:42:40Z
 categories: ["articles"]
 tags: ["Journeys", "Paths", "InfoSec"]
@@ -11,7 +11,7 @@ Written by [Tim](authors/timwilkes)
 
 This article was inspired in part by the growing number of people tweeting about thier infosec Journeys. As mine is a little long, I though I would blog about it, rather than tweet.
 
-It is well established that I am reasonably old. Not massively old, jsut reasonably. Apparently, I am a member of a generation which is called the Xennials. I had an analogue childhood and now live in a digital time. When I was growing up, InfoSec wasn't a thing. As a youngster, I really enjoyed (to my parents chargrin) dismantelling things, usually electronic things, to see how they worked. I would put them back together. Or at least try. To quote Dave Lister from Red Dwarf "It's always the same with DIY, isn't it. A few bits and bobs left over."
+It is well established that I am reasonably old. Not massively old, just reasonably. Apparently, I am a member of a generation which is called the Xennials. I had an analogue childhood and now live in a digital time. When I was growing up, InfoSec wasn't a thing. As a youngster, I really enjoyed (to my parents chargrin) dismantelling things, usually electronic things, to see how they worked. I would put them back together. Or at least try. To quote Dave Lister from Red Dwarf "It's always the same with DIY, isn't it. A few bits and bobs left over."
 
 In my teens, I had my first computer (A Commodore 64 C) which I shared with my brother. Shortly after, I got a Commodore 128D, and a couple of printers. This start helped me learn typing. I was also interested in programming, but at that stage, it looked a bit like magic. Still, I could write documents and manage files.
 
