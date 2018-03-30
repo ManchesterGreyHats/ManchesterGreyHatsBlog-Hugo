@@ -26,6 +26,7 @@ So the CTF brief we were given was that it was a bit of OSINT (link to [Brett's 
 There were a couple of USB pen drives going around with a live image (Jay assured us the USB sticks were _legit_) for us to boot to with most of the environment set up this included an android virtual device (running Android 7 - _Nougat_) the CTF APK - an application called _safepass_ and a couple of tools - ADB and a tool called [JADX](https://github.com/skylot/jadx) which is used to decompile the APK into readable android code.
 
 After unsuccessfully trying to run the APK in the android emulator in the live environment for a while I decided I was going to look at the APK code and see if I could rebuild the APK in Android Studio with some helpful breakpoints. First I put the APK on a pen drive and rebooted back into my regular environment, created a virtual device in android studio as I was going to do this anyway and installed the APK and ran it. I was greeted with a login screen what a _handsome_ devil!
+
 ![image](images/m1conctf/login_screen.png)
 
 As you can see the app lists a user name but asks for a password. Since I heard there was going to be some OSINT in this CTF I started searching for _handsomerob_ some of the results were ... interesting
