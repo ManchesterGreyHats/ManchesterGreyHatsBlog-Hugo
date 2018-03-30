@@ -8,7 +8,7 @@ url: /2018/03/28/m1con-ctf-writeup/
 
 Presented by [Paul w](authors/PaulW/)
 
-(Follow me)(https://twitter.com/phyushin)
+[Follow me](https://twitter.com/phyushin)
 
 Introduction
 ===========
