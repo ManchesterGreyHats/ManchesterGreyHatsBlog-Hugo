@@ -8,6 +8,8 @@ url: /2018/03/28/m1con-ctf-writeup/
 
 Presented by [Paul w](authors/PaulW/)
 
+[https://twitter.com/phyushin]
+
 Introduction
 ===========
 
@@ -21,12 +23,12 @@ The CTF
 ========
 
 So the CTF brief we were given was that it was a bit of OSINT (link to [Brett's OSINT Workshop](/2017/10/25/osint-workshop/)) and a bit of mobile security involved.
-there were a couple of USB pen drives going around with a live image (Jay assured us the USB sticks were _legit_) for us to boot to with most of the environment set up this included an android virtual device (running Android 7 - _Nougat_) the CTF APK - an application called _safepass_ and a couple of tools - the ADB and a tool called [JADX](https://github.com/skylot/jadx) which is used to decompile the APK into readable android code.
+There were a couple of USB pen drives going around with a live image (Jay assured us the USB sticks were _legit_) for us to boot to with most of the environment set up this included an android virtual device (running Android 7 - _Nougat_) the CTF APK - an application called _safepass_ and a couple of tools - ADB and a tool called [JADX](https://github.com/skylot/jadx) which is used to decompile the APK into readable android code.
 
-After unsuccessfully trying to run the APK in the android emulator in the live environment for a while I decided I was going to look at the APK code and see if I could rebuild the APK in Android Studio with some helpful breakpoints, first I put the APK on a pen drive and rebooted back into my regular environment, created a virtual device in android studio as I was going to do this anyway and installed the APK and ran it. I was greeted with a login screen what a _handsome_ devil!
+After unsuccessfully trying to run the APK in the android emulator in the live environment for a while I decided I was going to look at the APK code and see if I could rebuild the APK in Android Studio with some helpful breakpoints. First I put the APK on a pen drive and rebooted back into my regular environment, created a virtual device in android studio as I was going to do this anyway and installed the APK and ran it. I was greeted with a login screen what a _handsome_ devil!
 ![image](images/m1conctf/login_screen.png)
 
-As you can see the app lists a user name but asks for a password, since I heard there was going to be some OSINT in this CTF I started searching for _handsomerob_ some of the results were ... interesting
+As you can see the app lists a user name but asks for a password. Since I heard there was going to be some OSINT in this CTF I started searching for _handsomerob_ some of the results were ... interesting
 but on twitter I found a user that had the same image and user name - so that probably wasn't coincidence.
 
 ![image](images/m1conctf/handsome_twitter.png)
@@ -35,7 +37,7 @@ Seeing as this is OSINT we should poke around this user's twitter account and se
 
 ![image](images/m1conctf/twitter_posts.png)
 
-Looking at the user's posts they have posts about kiwis and complains about having to use numbers password a couple of likely passwords:
+Looking at the user's posts they have posts about kiwis and complains about having to use numbers in passwords. A couple of likely passwords:
 
 ```
 kiwi1
@@ -52,30 +54,31 @@ Entering the correct password gives us a a 2fa prompt ...
 
 ![image](images/m1conctf/safepass_2fa.png)
 
-But we don't have any info on the 2fa ... we'll try 0379... nope, let's bust the apk with Jadx
+But we don't have any info on the 2fa ... we'll try 0379... nope, let's bust the apk with Jadx.
 
 Jadx
 =====
-Jadx is a tool that allows you to export apk into a gradle project so you can review the code
-select the apk to export
+Jadx is a tool that allows you to export apk into a gradle project so you can review the code.
+
+Select the apk to export
 
 ![image](images/m1conctf/jadx_selecting_apk.png)
 
-as you can see looking at the apk in jadx shows the code in a tree including the package name
+as you can see by looking at the apk in jadx, it shows the code in a tree including the package name.
 
 ![image](images/m1conctf/jadx_structure.png)
 
-you can also export into a gradle project to open in android studio
+you can also export into a gradle project to open in android studio.
 
 ![image](images/m1conctf/export_to_gradle.png)
 
-examining the project structure in jadx we can also see there is an SQLite DB - we can look at this in jadx but it's a little garbled ... instead what we're going to to is open the apk with an archive manager [winrar](https://www.rarlab.com/download.htm) will work if you're in Windows, in Linux you'll be able to just pop it open from the file explorer
-and in the assets folder there will be a database file _safepass.db_  let's examine it using SQLiteBrowser
+Examining the project structure in jadx we can also see there is an SQLite DB - we can look at this in jadx but it's a little garbled ... instead what we're going to to is open the apk with an archive manager [winrar](https://www.rarlab.com/download.htm) will work if you're in Windows, in Linux you'll be able to just pop it open from the file explorer
+and in the assets folder there will be a database file _safepass.db_. Let's examine it using SQLiteBrowser.
 
 SQLiteBrowser
 =============
 
-[SQLiteBrowser](http://sqlitebrowser.org) is a tool that allows you to browse sqlite databases
+[SQLiteBrowser](http://sqlitebrowser.org) is a tool that allows you to browse sqlite databases.
 
 
 _settings table_
@@ -90,7 +93,7 @@ So the string we need to decrypt is the notes field in the credentials_table : _
 
 The Android Code
 ================
-looking at the code we can see the following functions that seem interesting
+Looking at the code we can see the following functions that seem interesting
 
 _LoginActivity.java_
 ```java
@@ -184,29 +187,26 @@ public class CryptoHandler {
 }
 
 ```
-looking at the _checkPassword_ function  it creates a new instance of CryptoHandler passing the password
-and checks that the value returned by the _decrypt_ function equals __"DI{Th15_u53r_15_l0gg3d_1n}"__
+looking at the _checkPassword_ function, it creates a new instance of CryptoHandler passing the password
+and then checks that the value returned by the _decrypt_ function equals __"DI{Th15_u53r_15_l0gg3d_1n}"__
 ```java
   return new CryptoHandler(password).decrypt(getAuthenticationToken()).equals("DI{Th15_u53r_15_l0gg3d_1n}");
 ```
-from both the decrypt and encrypt functions we can see that the cipher is "AES"
-and we know the password is `kiwi0379`
-
-
+From both the decrypt and encrypt functions we can see that the cipher is "AES" and we know the password is `kiwi0379`
 
 ```java
   this.mKey = (secretKey + "0000000000000000").substring(0, 16).getBytes("UTF8");
   this.mIV = "itsasecret000000".getBytes("UTF8");
 ```
-we know we have all we need to decrypt the notes we have everything to build the key so we _could_ take those things and use something like [CyberChef](https://gchq.github.io/CyberChef/#recipe=AES_Decrypt) but where's the fun in that ;-)
+We know we have all we need to decrypt the notes as we have everything to build the key so we _could_ take those things and use something like [CyberChef](https://gchq.github.io/CyberChef/#recipe=AES_Decrypt) but where's the fun in that? ;-)
 
- we're going to use the app against itself with frida!
+We're going to use the app against itself with frida!
 
 
 Frida
 =====
 Seeing as I wanted to play around with [Frida](https://www.frida.re) a little bit I thought I'd use it to solve this challenge.
-I created an android virtual device and install the CTF app on it
+I created an android virtual device and install the CTF app on it,
 
 First you need we need to push the frida server to the phone or the virtual device
 ```
@@ -214,7 +214,7 @@ phyu@Balamb:~/Android/Sdk/platform-tools$ ./adb push ~/Dev/M1Con/frida-server /d
 /home/phyu/Dev/M1Con/frida-server: 1 file pushed. 168.5 MB/s (25126612 bytes in 0.142s)
 ```
 
-and then connect to the shell
+And then connect to the shell.
 
 ```
 generic_x86:/ $ su
@@ -223,7 +223,7 @@ generic_x86:/data/local/tmp # chmod 775 frida-server
 generic_x86:/data/local/tmp # ./frida-server &
 ```
 
-once we have the server running on the device we need to connect to it
+Once we have the server running on the device we need to connect to it.
 
 ```
 phyu@Balamb:~$ frida -U -f com.digitalinterruption.safepass.safepass --no-pause
@@ -240,7 +240,7 @@ Spawned `com.digitalinterruption.safepass.safepass`. Resuming main thread!
 [Android Emulator 5554::com.digitalinterruption.safepass.safepass]->
 
 ```
-We get the above window and then we know it's running, now we can create a script file that we inject into the running program, which will allow us to overwrite functionality of the program
+We get the above window and then we know it's running. Now we can create a script file that we inject into the running program, which will allow us to overwrite functionality of the program.
 
 ```
 phyu@Balamb:~$ frida -U -l ~/Dev/M1Con/ctf.js -f com.digitalinterruption.safepass.safepass --no-pause
@@ -256,23 +256,22 @@ setImmediate(function() {
 });
 ```
 
-what currently happens is the user clicks the login button and it calls the decrypt function like so
+What currently happens is the user clicks the login button and it calls the decrypt function like so:
 
 ```java
   decrypt(getAuthenticationToken()).equals("DI{Th15_u53r_15_l0gg3d_1n}");
 ```
 
-what we want to do is override the decrypt function - to decrypt the notes field - what's really cool is we can actually use the current implementation to decrypt it
+What we want to do is call the decrypt function to decrypt the notes field. What's really cool is we can actually use the current implementation to decrypt it.
 
-with frida we can use the [Java.use](https://www.frida.re/docs/javascript-api/#java) function to create a wrapper for the CryptoHandler class
+With frida we can use the [Java.use](https://www.frida.re/docs/javascript-api/#java) function to create a wrapper for the CryptoHandler class
 
 ```java
   var crypto = Java.use("com.digitalinterruption.safepass.safepass.CryptoHandler");
 ```
-it's important to note that `crypto` will now refer to the CryptoHandler that's instantiated when the user clicks the login button so we need to provide the correct passwords
+It's important to note that `crypto` will now refer to the CryptoHandler that's instantiated when the user clicks the login button so we need to provide the correct passwords.
 
-what we do then is instead of checking if the password matches log the output of the decrypt function passing in the notes field
-
+What we do then is instead of checking if the password matches, log the output of the decrypt function after passing in the notes field
 
 __CTF.js (final)__
 ```javascript
