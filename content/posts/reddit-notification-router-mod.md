@@ -2,7 +2,7 @@
 title: "Reddit Notification Router Mod"
 date: 2012-07-07T09:29:33Z
 categories: ["articles"]
-tags: ["hardware", "router", "reddit", "shell script"]
+tags: ["hardware", "router", "reddit", "shell script","Jay"]
 ---
 Written by [Jay](authors/jayharris)
 
