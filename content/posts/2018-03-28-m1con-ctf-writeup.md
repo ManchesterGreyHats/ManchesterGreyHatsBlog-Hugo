@@ -199,7 +199,7 @@ From both the decrypt and encrypt functions we can see that the cipher is "AES" 
   this.mKey = (secretKey + "0000000000000000").substring(0, 16).getBytes("UTF8");
   this.mIV = "itsasecret000000".getBytes("UTF8");
 ```
-We know we have all we need to decrypt the notes as we have everything to build the key so we _could_ take those things and use something like [CyberChef](/2018/04/18/aes-decode-with-cyberchef.md) but where's the fun in that? ;-)
+We know we have all we need to decrypt the notes as we have everything to build the key so we _could_ take those things and use something like [CyberChef](/2018/04/18/aes-decode-with-cyberchef/) but where's the fun in that? ;-)
 
 We're going to use the app against itself with frida!
 
