@@ -80,7 +80,7 @@ In an attempt to bypass the filter we submit two commands with a semi colon _who
 
 Figure 3 - Different message indicating that the semi-colon was picked up and is also filtered
 
-But commands can also be strung together with _&&_ (Figure 4).
+But commands can also be strung together with _&&_ (__whomami && ls__) (Figure 4).
 
 ![image](images/bobctf/devshell_using_amp.png)
 
@@ -175,7 +175,7 @@ Burpsuite defaults to port 8080 - in this instance we've no need to change that!
 
 ![image](images/bobctf/burp_response.png)
 
-Figure 6 - Our __Whoami__ command being sent as a POST parameter.
+Figure 6 - Our __whoami__ command being sent as a POST parameter.
 
 Now we know the request has been sent we can now pass that request to the __repeater__ tab in burpsuite this is done by finding the desired request in the _http history_ tab and right clicking and clicking the __send to repeater__ context menu option (Figure 7).
 
