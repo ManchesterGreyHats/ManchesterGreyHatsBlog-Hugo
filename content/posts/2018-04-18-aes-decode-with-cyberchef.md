@@ -13,7 +13,7 @@ Presented by [Tim](authors/timwilkes)
 Introduction
 ============
 
-This is a follow up article to [Paul W](authors/paulw)'s write-up about [m1con's mobile ctf](/2018/03/28/m1con-ctf-writeup.md). In the article, Paul mentioned [Cyberchef](https://gchq.github.com/CyberChef), and it was a quick way of solving the challenge.
+This is a follow up article to [Paul W](authors/paulw)'s write-up about [m1con's mobile ctf](/2018/03/28/m1con-ctf-writeup). In the article, Paul mentioned [Cyberchef](https://gchq.github.io/CyberChef/), and it was a quick way of solving the challenge.
 
 Since Cyberchef wasn't covered, and may provide a quicker solution for future ctf challenges, I decided to describe it here.
 
