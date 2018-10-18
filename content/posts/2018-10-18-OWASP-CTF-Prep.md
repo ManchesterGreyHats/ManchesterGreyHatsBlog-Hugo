@@ -26,4 +26,7 @@ The challenge itself uses a arduino nano, a OLED display, and shutter key switch
 
 So, since some people asked, I have decided to post a bit of information about how the device was built.
 
+
+
+
 -->
