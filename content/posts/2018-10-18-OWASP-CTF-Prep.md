@@ -12,7 +12,7 @@ Presented by [Tim](authors/timwilkes)
 
 ## Soon ...
 
-![image](images/owasp-ctf-2018/VID_20181016_113841.mp4)
+![image](images/owasp-ctf-2018/IMG_20181014_205911.jpg)
 
 
 <!-- 
