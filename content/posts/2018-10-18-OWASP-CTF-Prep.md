@@ -1,32 +1,42 @@
 ---
-title: "OWASP CTF Prep"
-date: 2018-10-18T13:07:40+01:00
+title: "OWASP CTF Prep - Crypto Challenge"
+date: 2018-10-20T00:00:00+00:00
 categories: ["articles"]
-tags: ["OWASP", "CTF", "Lockpicking", "timw"]
-url: /2018/10/18/OWASP-CTF-Prep/
+tags: ["OWASP", "CTF", "Crypto", "paulw"]
+url: /2018/10/18/OWASP-CTF-Prep-Crypto/
 ---
 
-Presented by [Tim](authors/timwilkes)
+Presented by [Paul](authors/paulw)
 
-[Follow me on Twitter](https://twitter.com/timmehwimmy)
+[Follow me on Twitter](https://twitter.com/phyushin)
 
-## Soon ...
+## Useful Pages for the crypto challenges
 
-![image](images/owasp-ctf-2018/IMG_20181014_205911.jpg)
+[Dcode](https://www.dcode.fr/tools-list)
+Dcode.fr is a really cool website with lots of different tools to help with decoding of various cryptography
 
+[CyberChef](https://gchq.github.io/CyberChef/)
+Cyberchef is a tool that you can use to encode and decode things into all sorts of different formats, it's a really great tool you should check it out!
 
 <!-- 
 
-# So you found the info..... 
-flag{H1dd3n_t3xt}
+# you found the first crypto flag!
+flag{light_crypto}
 
-... your reward is some extra info on the challenge. This one is Lockpicking. The main device that I have been teasing people with was built by me, but it is at the heart a lockpicking challenge.
+...your reward is some extra info on the challenge. This one is for crypto. 
 
-The challenge itself uses a arduino nano, a OLED display, and shutter key switch and a few other supporting pieces.
-
-So, since some people asked, I have decided to post a bit of information about how the device was built.
-
-
-
+For instance did you know crypto is quite old - i'm talking about Cryptography not Cryptocurrency like
+Litecoin of bitcoin...
+All those things sometimes
+Get misused.
+There is a second flag on this page
+Where do you think it might be?
+On the other hand ... might be a wild goose chase!
 
 -->
+There also seems to be a [Twitter account](https://twitter.com/Cryptochalleng4) that will post more clues 
+
+
+Thanks,
+
+Paul W
