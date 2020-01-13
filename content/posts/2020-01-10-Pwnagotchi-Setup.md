@@ -85,7 +85,7 @@ and you will hear the "new hardware detected" sound this is the rnds gadget bein
 
   prefered dns: 1.1.1.1
   ```
-![configuration](/content/images/pwnagotchi/network_config.png)  
+![configuration](/content/images/pwnagotchi/network_config.PNG)  
   and save this.
 
   now go back to putty and you should now be able to connect to the pi with the following creds
@@ -112,7 +112,7 @@ systemctl status pwnagotchi (this will show you what the pwnagotchi is currently
  dont worry about that now that you have access to the web interface wou can go into the web config
  menu and change them. 
 
-![web_config image](/content/images/pwnagotchi/webcfg.png)
+![web_config image](/content/images/pwnagotchi/webcfg.PNG)
 
 from here you can search for the settings and change them
 search for ui.web.username and enter it  
