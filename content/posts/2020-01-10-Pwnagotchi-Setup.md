@@ -1,8 +1,9 @@
 ---
- Title: Pwnagotchi Set Up Part 1
- Date: 2020-01-10T23:30:00Z
+ Title: Pwnagotchi Set Up
+ Date: 2020-01-13T23:30:00Z
  Author : John W
  Categories: ["Misc"]
+ 
  Tags: ["John W","Wi-Fi", "Raspberry Pi", "Weekend Projects"]
 ---
 ## Basic Setup
@@ -65,7 +66,7 @@ and you will hear the "new hardware detected" sound this is the rnds gadget bein
   So on the pi0w there are 2 mirco usb ports the one that is closer to the hdmi port it the data one 
   and the one at the top is the power one.
 
-![pi connections](/content/images/pwnagotchi/connections.JPG)
+![pi connections](/content/images/pwnagotchi/connections.png)
 
   now to connect to the pi we will need to use ssh.
   i normally use putty to ssh in windows (https://www.chiark.greenend.org.uk/~sgtatham/putty/)
