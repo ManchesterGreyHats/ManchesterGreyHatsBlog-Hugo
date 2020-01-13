@@ -1,7 +1,9 @@
 ---
- Title:Pwnagotchi Set Up Part 1
- Date: 2020-01-10T23:30:00Z
- Author : Ponix
+ title: Pwnagotchi Set Up Part 1
+ date: 2020-01-10T23:30:00Z
+ author : johnw
+ categories: ["Misc"]
+ tags: ["Johnw","Wi-Fi", "Raspberry Pi", "Weekend Projects"]
 ---
 ## Basic Setup
 
