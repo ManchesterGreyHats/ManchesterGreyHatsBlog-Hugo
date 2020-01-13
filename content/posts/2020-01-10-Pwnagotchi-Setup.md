@@ -22,7 +22,7 @@ first things first you will need the following items
 
   open up the program and select the img and the device you want to write to . (make sure you dont write over a pendrive you forgot was plugged in ... i have a friend who did this ) and it should look somthing like this :
 
-  ![installer image](./content/images/pwnagotchi/write_img.png)
+  ![installer image](./content/images/pwnagotchi/write_image.PNG)
 
   once that is done writing eject your sd card and then put it back it .
   the SD card should Pop up in the file explorer menu.
