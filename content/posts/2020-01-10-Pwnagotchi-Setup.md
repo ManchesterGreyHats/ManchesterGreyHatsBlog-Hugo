@@ -23,7 +23,7 @@ first things first you will need the following items
 
   open up the program and select the img and the device you want to write to . (make sure you dont write over a pendrive you forgot was plugged in ... i have a friend who did this ) and it should look somthing like this :
 
-  ![installer image](/content/images/pwnagotchi/write_image.PNG)
+  ![installer image](images/pwnagotchi/write_image.PNG)
 
   once that is done writing eject your sd card and then put it back it .
   the SD card should Pop up in the file explorer menu.
@@ -66,7 +66,7 @@ and you will hear the "new hardware detected" sound this is the rnds gadget bein
   So on the pi0w there are 2 mirco usb ports the one that is closer to the hdmi port it the data one 
   and the one at the top is the power one.
 
-![pi connections](/content/images/pwnagotchi/connections.PNG)
+![pi connections](images/pwnagotchi/connections.PNG)
 
   now to connect to the pi we will need to use ssh.
   i normally use putty to ssh in windows (https://www.chiark.greenend.org.uk/~sgtatham/putty/)
@@ -86,7 +86,7 @@ and you will hear the "new hardware detected" sound this is the rnds gadget bein
 
   prefered dns: 1.1.1.1
   ```
-![configuration](/content/images/pwnagotchi/network_config.PNG)  
+![configuration](images/pwnagotchi/network_config.PNG)  
   and save this.
 
   now go back to putty and you should now be able to connect to the pi with the following creds
@@ -113,7 +113,7 @@ systemctl status pwnagotchi (this will show you what the pwnagotchi is currently
  dont worry about that now that you have access to the web interface wou can go into the web config
  menu and change them. 
 
-![web_config image](/content/images/pwnagotchi/webcfg.PNG)
+![web_config image](images/pwnagotchi/webcfg.PNG)
 
 from here you can search for the settings and change them
 search for ui.web.username and enter it  
