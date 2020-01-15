@@ -59,7 +59,7 @@ web:
 once you have done this then you can eject the sd card and put it in your pi
 the first time it boots it will take some time so just wait.
 once the green LED stops blinking you should then be able to connect to the pi via usb.
-and you will hear the "new hardware detected" sound this is the rnds gadget being installed (to connect cia usb)
+and you will hear the "new hardware detected" sound this is the rnds gadget being installed (to connect via usb)
 
 #Step 2 - Connecting to the RPI
 
